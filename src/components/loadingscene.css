@@ -1,0 +1,178 @@
+ :root {
+  --border-color:#00FF00;
+  --background-color: #333;
+  --border-radius-big: 6px;
+  --font-size-header: 16px;
+}
+
+body {
+  background: var(--background-color);
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+}
+
+@keyframes spin {
+  0% { transform: translate(2px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -3px) rotate(-36deg); }
+  20% { transform: translate(-2px, 0px) rotate(-72deg); }
+  30% { transform: translate(1px, 2px) rotate(-108deg); }
+  40% { transform: translate(1px, -1px) rotate(-144deg); }
+  50% { transform: translate(-1px, 3px) rotate(-180deg); }
+  60% { transform: translate(-1px, 1px) rotate(-216deg); }
+  70% { transform: translate(3px, 1px) rotate(-252deg); }
+  80% { transform: translate(-2px, -1px) rotate(-288deg); }
+  90% { transform: translate(2px, 1px) rotate(-324deg); }
+  100% { transform: translate(1px, -2px) rotate(-360deg); }
+}
+
+@keyframes speed {
+  0% { transform: translate(2px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -3px) rotate(-1deg); }
+  20% { transform: translate(-2px, 0px) rotate(1deg); }
+  30% { transform: translate(1px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 3px) rotate(-1deg); }
+  60% { transform: translate(-1px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-2px, -1px) rotate(1deg); }
+  90% { transform: translate(2px, 1px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes strikes {
+  from { left: 25px; }
+  to { left: -80px; opacity: 0; }
+}
+
+@keyframes dots {
+  from { width: 0px; }
+  to { width: 15px; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.loading-window {
+  animation: fadeIn 0.4s both;
+  background: var(--background-color);
+  border-radius: var(--border-radius-big);
+  border: 3px solid var(--border-color);
+  color: var(--border-color);
+  height: 200px;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -100px;
+  position: fixed;
+  top: 50%;
+  width: 300px;
+  z-index: 99;
+}
+
+.loading-window .text {
+  font-size: var(--font-size-header);
+  position: absolute;
+  width: auto;
+  top: 75%;
+  left: 38%;
+  margin: 0 auto;
+}
+
+.loading-window .car {
+  position: absolute;
+  width: 117px;
+  height: 42px;
+  left: 92px;
+  top: 70px;
+}
+
+.loading-window .car .strike {
+  position: absolute;
+  width: 11px;
+  height: 1px;
+  background: var(--border-color);
+  animation: strikes 0.2s linear infinite;
+}
+
+.loading-window .car .strike2 { top: 11px; animation-delay: 0.05s; }
+.loading-window .car .strike3 { top: 22px; animation-delay: 0.1s; }
+.loading-window .car .strike4 { top: 33px; animation-delay: 0.15s; }
+.loading-window .car .strike5 { top: 44px; animation-delay: 0.2s; }
+
+.loading-window .car-detail {
+  position: absolute;
+  display: block;
+  background: var(--border-color);
+}
+
+.loading-window .car-detail.spoiler {
+  width: 0;
+  height: 0;
+  top: 7px;
+  background: none;
+  border: 20px solid transparent;
+  border-bottom: 8px solid var(--border-color);
+  border-left: 20px solid var(--border-color);
+}
+
+.loading-window .car-detail.back {
+  height: 20px;
+  width: 92px;
+  top: 15px;
+  left: 0px;
+}
+
+.loading-window .car-detail.center {
+  height: 35px;
+  width: 75px;
+  left: 12px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 45px 40px;
+  border: 4px solid var(--border-color);
+  background: none;
+  box-sizing: border-box;
+}
+
+.loading-window .car-detail.center1 {
+  height: 35px;
+  width: 35px;
+  left: 12px;
+  border-top-left-radius: 30px;
+}
+
+.loading-window .car-detail.front {
+  height: 20px;
+  width: 50px;
+  top: 15px;
+  left: 67px;
+  border-top-right-radius: 50px 40px;
+  border-bottom-right-radius: 10px;
+}
+
+.loading-window .car-detail.wheel {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: 20px;
+  left: 12px;
+  border: 3px solid var(--background-color);
+  background: linear-gradient(45deg, transparent 45%, var(--border-color) 46%, var(--border-color) 54%, transparent 55%), linear-gradient(-45deg, transparent 45%, var(--border-color) 46%, var(--border-color) 54%, transparent 55%), linear-gradient(90deg, transparent 45%, var(--border-color) 46%, var(--border-color) 54%, transparent 55%), linear-gradient(0deg, transparent 45%, var(--border-color) 46%, var(--border-color) 54%, transparent 55%), radial-gradient(var(--border-color) 29%, transparent 30%, transparent 50%, var(--border-color) 51%), var(--background-color);
+  animation-name: spin;
+}
+
+.loading-window .car-detail.wheel.wheel2 {
+  left: 82px;
+}
+
+@media only screen and (max-width: 600px) {
+  .loading-window {
+    width: 80%;
+    margin-left: -40%;
+  }
+
+  .loading-window .text {
+    font-size: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
