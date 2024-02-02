@@ -21,6 +21,11 @@ const ContactUs = () => {
           <div className="form-img">
             <img src={contact} alt="contact" />
           </div>
+          <div className="address-card">
+            <h3>Our Address</h3>
+            <p>123 Street, City</p>
+            <p>Country</p>
+          </div>
         </div>
       </div>
     </div>
@@ -28,3 +33,4 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+
