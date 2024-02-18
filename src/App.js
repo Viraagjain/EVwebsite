@@ -7,7 +7,6 @@ import Aboutus from './components/Aboutus';
 import Services from './components/Services';
 import Contactus from './components/Contactus';
 import Footer from './components/Footer';
-
 function App() {
   const [loading, setLoading] = useState(true);
 

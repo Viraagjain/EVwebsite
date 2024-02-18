@@ -5,7 +5,7 @@ import { HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
 
 function Navigation() {
   const [click, setClick] = useState(false);
-  const logo = require('./logo.jpeg');
+  const logo = require('../images/logo.jpeg');
   const handleClick = () => setClick(!click);
   return (
     <>

@@ -1,37 +1,122 @@
- .home-container {
+/* .home-container {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: white; 
+  background-color: white;
 }
 
-.left-content, .right-content {
-  width: 100%;
+.landing-container {
+  margin-bottom: 20px; 
 }
 
 .right-content img {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
 }
+
+.right-info {
+  padding-top: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-pair {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.carousel-pair .carousel {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
 
 @media (min-width: 768px) {
   .home-container {
     flex-direction: row;
   }
 
-  .left-content {
-    flex: 1;
-    padding-right: 20px;
+  .landing-container {
+    flex: 1; 
   }
 
   .right-content {
     flex: 1;
-    display: flex;
-    justify-content: flex-end; 
+    margin-left: 20px;
   }
 
-  .right-content img {
-    max-width: 100%; 
+  .right-info {
+    padding-left: 20px;
+  }
+} */
+
+/* home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+}
+
+.landing-container {
+  margin-bottom: 20px; /* Add margin to create space between landing and carousels */
+}
+
+.right-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+
+  /* Responsive Layout */
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 }
 
+.right-info {
+  padding-top: 20px;
+
+  /* Responsive Layout */
+  @media (min-width: 768px) {
+    padding-left: 20px;
+  }
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-pair {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.carousel-pair .carousel {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .landing-container {
+    flex: 1; /* Take full width in larger screens */
+  }
+
+  .right-content {
+    flex: 1;
+    margin-left: 20px;
+  }
+}

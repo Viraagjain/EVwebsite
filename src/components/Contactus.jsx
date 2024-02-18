@@ -1,6 +1,6 @@
 import React from 'react';
 import './contactus.css';
-const contact = require('./contact.gif');
+const contact = require('../images/contact.gif');
 
 const ContactUs = () => {
   return (
