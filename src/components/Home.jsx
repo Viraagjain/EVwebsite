@@ -61,43 +61,47 @@ const Home = () => {
       {/* Carousels Container */}
       <div className="carousel-container">
         <div className="carousel-pair">
-          {/* First Image Carousel */}
           <Carousel data-bs-theme="dark" showThumbs={false}>
-            {carouselImages1.map((image, index) => (
-              <div key={index}>
+          {carouselImages1.map((image, index) => (
+            <div key={index} className="carousel-card">
+              <div className="card-content">
                 <img src={image} alt={`carousel-1-${index}`} />
               </div>
-            ))}
-          </Carousel>
+            </div>
+          ))}
+        </Carousel>
 
-          {/* Second Image Carousel */}
-          <Carousel showThumbs={false} data-bs-theme="dark">
-            {carouselImages2.map((image, index) => (
-              <div key={index}>
+          <Carousel data-bs-theme="dark" showThumbs={false}>
+          {carouselImages2.map((image, index) => (
+            <div key={index} className="carousel-card">
+              <div className="card-content">
                 <img src={image} alt={`carousel-2-${index}`} />
               </div>
-            ))}
-          </Carousel>
+            </div>
+          ))}
+        </Carousel>
         </div>
 
         <div className="carousel-pair">
-          {/* Third Image Carousel */}
-          <Carousel showThumbs={false} data-bs-theme="dark">
-            {carouselImages3.map((image, index) => (
-              <div key={index}>
+          <Carousel data-bs-theme="dark" showThumbs={false}>
+          {carouselImages3.map((image, index) => (
+            <div key={index} className="carousel-card">
+              <div className="card-content">
                 <img src={image} alt={`carousel-3-${index}`} />
               </div>
-            ))}
-          </Carousel>
+            </div>
+          ))}
+        </Carousel>
 
-          {/* Fourth Image Carousel */}
           <Carousel data-bs-theme="dark" showThumbs={false}>
-            {carouselImages4.map((image, index) => (
-              <div key={index}>
+          {carouselImages4.map((image, index) => (
+            <div key={index} className="carousel-card">
+              <div className="card-content">
                 <img src={image} alt={`carousel-4-${index}`} />
               </div>
-            ))}
-          </Carousel>
+            </div>
+          ))}
+        </Carousel>
         </div>
       </div>
     </div>
