@@ -1,22 +1,66 @@
+/* .aboutus-container {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.team-container {
+  background-color: #ffffff; 
+}
+
+.heading {
+  font-size: 24px;
+  color: #333;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  margin-top: 20px;
+} */
+
 .aboutus-container {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-  }
-  
-  .heading {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .logo {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-  
-  .description {
-    font-size: 16px;
-    color: #555;
-    margin-top: 20px;
-  }
+  text-align: center;
+  padding: 20px;
+  background-color: #333; 
+  color: white; 
+}
+
+.learn-more-button {
+  background-color: #81c644; 
+  color: white; 
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.team-container {
+  background-color: #ffffff; 
+}
+
+.heading {
+  font-size: 24px;
+  color: #fff; 
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #fff; 
+  margin-top: 20px;
+}
+
