@@ -1,88 +1,14 @@
-/* .home-container {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  background-color: white;
-}
-
-.landing-container {
-  margin-bottom: 20px;
-}
-
-.right-content img {
-  max-width: 100%;
-  height: auto;
-}
-
-.landing-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-}
-
-.right-info {
-  padding-top: 20px;
-
-  @media (min-width: 768px) {
-    padding-left: 20px;
-  }
-}
-
-.carousel-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.carousel-pair {
-  flex: 1;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.carousel-pair:last-child {
-  margin-right: 0;
-}
-
-.carousel-pair .carousel {
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-.carousel-card {
-  background-color: green;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-@media (max-width: 480px) {
-  .carousel-container {
-    flex-direction: column;
-  }
-
-  .carousel-pair {
-    margin-right: 0;
-  }
-} */
-
 .home-container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   background-color: white;
 }
 
 .landing-container {
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  background-color: #333; 
+  color: white;
+  padding: 20px;
 }
 
 .right-content img {
@@ -103,54 +29,30 @@
 .right-info {
   padding-top: 20px;
 
-  /* Responsive Layout */
   @media (min-width: 768px) {
     padding-left: 20px;
   }
 }
 
-.carousel-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+.models-container {
+  background-color: lightgreen; 
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.carousel-pair {
-  flex: 1;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.carousel-pair:last-child {
-  margin-right: 0;
-}
-
-.carousel-pair .carousel {
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-.carousel-card {
-  background-color: green;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.card-content {
-  padding: 20px;
+.models-container h2 {
+  color: #333; 
 }
 
 @media (max-width: 480px) {
-  .carousel-container {
+  .landing-content {
     flex-direction: column;
+    align-items: center;
   }
 
-  .carousel-pair {
-    margin-right: 0;
-  }
-
-  .carousel-pair .carousel {
-    margin-bottom: 20px;
+  .right-info {
+    padding-top: 20px;
+    padding-left: 0;
   }
 }
